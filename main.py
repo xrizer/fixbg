@@ -12,8 +12,8 @@ def hello_world():
 
 @app.route('/predict',methods=['POST'])
 def coba():
-    imagefile = request.files['']
-    img_path = 'tmp/' + imagefile.filename
+    imagefile = request.files['file']
+    img_path = 'images/' + imagefile.filename
     imagefile.save(img_path)
     result, peluang, count = main(img_path, model1, model2, model3)
     hasil = report(result, peluang, count)

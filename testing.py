@@ -4,8 +4,8 @@ import tensorflow as tf
 import matplotlib.pyplot as plt
 import numpy as np
 from efficientnet.keras import preprocess_input
-from keras.models import load_model
-from keras.utils import load_img, img_to_array
+from tensorflow.keras.models import load_model
+from tensorflow.keras.utils import load_img, img_to_array
 
 tf.get_logger().setLevel(logging.ERROR)
 
